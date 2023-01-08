@@ -1,0 +1,41 @@
+{
+    "name": "mons/magento-widget",
+    "description": "Useful widget parameter types for page building in Magento 2",
+    "require": {
+        "php": "~8.1.0",
+        "magento/framework": "103.0.*",
+        "magento/module-cms": "104.0.*",
+        "magento/module-widget": "101.2.*"
+    },
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "AFL-3.0"
+    ],
+    "authors": [
+        {
+            "name": "Filippo Bovo",
+            "homepage": "https://filippobovo.com",
+            "role": "Solutions architect"
+        }
+    ],
+    "keywords": [
+        "magento 2",
+        "widget",
+        "magento 2 widget"
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.magento.com/"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "src/registration.php"
+        ],
+        "psr-4": {
+            "Mons\\Widget\\": "src/"
+        }
+    }
+}

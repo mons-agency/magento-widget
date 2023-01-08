@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright Mons Agency Ltd. Some rights reserved.
+ * See copying.md for details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Widget\Model\WidgetPlugin">
+        <plugin name="mons-widget-model-widget"
+            type="Mons\Widget\Plugin\Model\WidgetPlugin"
+            sortOrder="1"
+        />
+    </type>
+    <type name="Magento\Cms\Block\Adminhtml\Wysiwyg\Images\Content">
+        <plugin name="mons-widget-cms-block-wysiwyg-images-content"
+            type="Mons\Widget\Plugin\Block\Adminhtml\Wysiwyg\Images\ContentPlugin"
+            sortOrder="100"
+        />
+    </type>
+</config>
